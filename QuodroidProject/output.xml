@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.9 on win32)" generated="2024-04-13T01:58:32.500729" rpa="false" schemaversion="5">
+<suite id="s1" name="Testfinal" source="C:\Users\Yusayr Khan\Documents\Web development Practice\Quodrioid Challenge - Copy\QuodroidProject\testfinal.robot">
+<test id="s1-t1" name="Open google.com" line="4">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:58:32.948913" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-13T01:58:32.947874" elapsed="2.636766"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:58:35.587635" level="INFO">Opening url 'https://google.com'</msg>
+<arg>url=https://google.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-13T01:58:35.586634" elapsed="1.483143"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:58:32.946862" elapsed="4.123913"/>
+</test>
+<status status="PASS" start="2024-04-13T01:58:32.502663" elapsed="4.570118"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testfinal">Testfinal</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
