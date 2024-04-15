@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.9 on win32)" generated="2024-04-13T01:58:32.500729" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.9 on win32)" generated="2024-04-15T13:23:05.297141" rpa="false" schemaversion="5">
 <suite id="s1" name="Testfinal" source="C:\Users\Yusayr Khan\Documents\Web development Practice\Quodrioid Challenge - Copy\QuodroidProject\testfinal.robot">
 <test id="s1-t1" name="Open google.com" line="4">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-13T01:58:32.948913" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-04-15T13:23:06.094232" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-13T01:58:32.947874" elapsed="2.636766"/>
+<status status="PASS" start="2024-04-15T13:23:06.094232" elapsed="3.191375"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-04-13T01:58:35.587635" level="INFO">Opening url 'https://google.com'</msg>
+<msg time="2024-04-15T13:23:09.296096" level="INFO">Opening url 'https://google.com'</msg>
 <arg>url=https://google.com</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-04-13T01:58:35.586634" elapsed="1.483143"/>
+<status status="PASS" start="2024-04-15T13:23:09.296096" elapsed="2.575949"/>
 </kw>
-<status status="PASS" start="2024-04-13T01:58:32.946862" elapsed="4.123913"/>
+<status status="PASS" start="2024-04-15T13:23:06.093707" elapsed="5.781116"/>
 </test>
-<status status="PASS" start="2024-04-13T01:58:32.502663" elapsed="4.570118"/>
+<status status="PASS" start="2024-04-15T13:23:05.297141" elapsed="6.592394"/>
 </suite>
 <statistics>
 <total>

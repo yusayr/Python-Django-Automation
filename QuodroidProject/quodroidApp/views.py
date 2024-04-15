@@ -1,25 +1,14 @@
-from django.http import JsonResponse,HttpResponse
+from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
 import os
 
 @csrf_exempt
 def execute_test(request):
-    if request.method == 'POST' or request.method == 'GET':
-        # Parse the JSON data from the request body
-        data = {
-            "tests": [
-                {
-                    "title": "Open google.com",
-                    "steps": [
-                        "Open Browser browser='chrome'",
-                        "Go To url='https://google.com'"
-                    ]
-                }
-            ]
-        }
-
-        # Iterate over the 'tests' list correctly
+    if request.method == 'POST':
+        # Parse the JSON data
+        data = json.loads(request.body)
+       
         for test in data['tests']:
             title = test.get("title","")
             robot_code = "***Settings***\n" +"Library\t" "SeleniumLibrary\n"+ "***Test Cases***\n" 
@@ -28,14 +17,10 @@ def execute_test(request):
 
             for step in steps:
                 words = step.split()
-                command = " ".join(words[:2])
-                parameter = " ".join(words[2:])
+                command = " ".join(words[:-1])
+                parameter = words[-1]
                 modified_step = "\t" + command + "\t" + parameter.replace("'", "") + "\n"
                 robot_code += modified_step
-
-            # Write the robot_code to a file
-            with open('testfinal.robot', 'w') as file:
-                file.write(robot_code)
 
             # Make a POST request to the same URL
             # response = requests.post('http://127.0.0.1:8000/testai/tests/v1/execute', data=data)
